@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490EE3D51E031F7900689575 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490EE3D11E031F7900689575 /* FBSDKCoreKit.framework */; };
+		490EE3D61E031F7900689575 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490EE3D21E031F7900689575 /* FBSDKLoginKit.framework */; };
+		490EE3D81E031F7900689575 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490EE3D41E031F7900689575 /* Bolts.framework */; };
 		4992F5931DDBCD4D005EF1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992F5921DDBCD4D005EF1AC /* AppDelegate.swift */; };
-		4992F5951DDBCD4D005EF1AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992F5941DDBCD4D005EF1AC /* ViewController.swift */; };
+		4992F5951DDBCD4D005EF1AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992F5941DDBCD4D005EF1AC /* MainViewController.swift */; };
 		4992F5981DDBCD4D005EF1AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992F5961DDBCD4D005EF1AC /* Main.storyboard */; };
 		4992F59A1DDBCD4D005EF1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4992F5991DDBCD4D005EF1AC /* Assets.xcassets */; };
 		4992F59D1DDBCD4D005EF1AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992F59B1DDBCD4D005EF1AC /* LaunchScreen.storyboard */; };
 		4992F5A81DDBCD4D005EF1AC /* Nerd_Alert_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992F5A71DDBCD4D005EF1AC /* Nerd_Alert_Tests.swift */; };
 		4992F5B31DDBCD4D005EF1AC /* Nerd_Alert_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992F5B21DDBCD4D005EF1AC /* Nerd_Alert_UITests.swift */; };
+		49EF11C01E02238E00DB35BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49EF11BF1E02238E00DB35BA /* GoogleService-Info.plist */; };
 		62BA4A3F9ECFD66715F8AD08 /* Pods_Nerd_Alert_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909A10E3AE10988332EBF181 /* Pods_Nerd_Alert_UITests.framework */; };
 		9A82353E28D10B8E63869BCB /* Pods_Nerd_Alert_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3DB720D22E98E2CAC17AFC /* Pods_Nerd_Alert_Tests.framework */; };
 		C0E8B2838B388804F05191E9 /* Pods_Nerd_Alert_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8222B0C497C2CEA9616D81 /* Pods_Nerd_Alert_.framework */; };
@@ -39,9 +43,12 @@
 /* Begin PBXFileReference section */
 		03854ECF8DBA2909412481E0 /* Pods-Nerd Alert!Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nerd Alert!Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nerd Alert!Tests/Pods-Nerd Alert!Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2368BC4457552944193DE3AA /* Pods-Nerd Alert!UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nerd Alert!UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nerd Alert!UITests/Pods-Nerd Alert!UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		490EE3D11E031F7900689575 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		490EE3D21E031F7900689575 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		490EE3D41E031F7900689575 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		4992F58F1DDBCD4D005EF1AC /* Nerd Alert!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nerd Alert!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4992F5921DDBCD4D005EF1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4992F5941DDBCD4D005EF1AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4992F5941DDBCD4D005EF1AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4992F5971DDBCD4D005EF1AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4992F5991DDBCD4D005EF1AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4992F59C1DDBCD4D005EF1AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 		4992F5AE1DDBCD4D005EF1AC /* Nerd Alert!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nerd Alert!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4992F5B21DDBCD4D005EF1AC /* Nerd_Alert_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nerd_Alert_UITests.swift; sourceTree = "<group>"; };
 		4992F5B41DDBCD4D005EF1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49EF11BF1E02238E00DB35BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C603664C13679517D4747B0 /* Pods-Nerd Alert!UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nerd Alert!UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nerd Alert!UITests/Pods-Nerd Alert!UITests.release.xcconfig"; sourceTree = "<group>"; };
 		7B3DB720D22E98E2CAC17AFC /* Pods_Nerd_Alert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nerd_Alert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		909A10E3AE10988332EBF181 /* Pods_Nerd_Alert_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nerd_Alert_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490EE3D81E031F7900689575 /* Bolts.framework in Frameworks */,
 				C0E8B2838B388804F05191E9 /* Pods_Nerd_Alert_.framework in Frameworks */,
+				490EE3D51E031F7900689575 /* FBSDKCoreKit.framework in Frameworks */,
+				490EE3D61E031F7900689575 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +110,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		490EE3D91E031F8100689575 /* Facebook SDK */ = {
+			isa = PBXGroup;
+			children = (
+				490EE3D11E031F7900689575 /* FBSDKCoreKit.framework */,
+				490EE3D21E031F7900689575 /* FBSDKLoginKit.framework */,
+				490EE3D41E031F7900689575 /* Bolts.framework */,
+			);
+			name = "Facebook SDK";
+			sourceTree = "<group>";
+		};
 		4992F5861DDBCD4D005EF1AC = {
 			isa = PBXGroup;
 			children = (
@@ -125,11 +146,13 @@
 			isa = PBXGroup;
 			children = (
 				4992F5921DDBCD4D005EF1AC /* AppDelegate.swift */,
-				4992F5941DDBCD4D005EF1AC /* ViewController.swift */,
+				4992F5941DDBCD4D005EF1AC /* MainViewController.swift */,
 				4992F5961DDBCD4D005EF1AC /* Main.storyboard */,
 				4992F5991DDBCD4D005EF1AC /* Assets.xcassets */,
 				4992F59B1DDBCD4D005EF1AC /* LaunchScreen.storyboard */,
 				4992F59E1DDBCD4D005EF1AC /* Info.plist */,
+				49EF11BF1E02238E00DB35BA /* GoogleService-Info.plist */,
+				490EE3D91E031F8100689575 /* Facebook SDK */,
 			);
 			path = "Nerd Alert!";
 			sourceTree = "<group>";
@@ -283,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49EF11C01E02238E00DB35BA /* GoogleService-Info.plist in Resources */,
 				4992F59D1DDBCD4D005EF1AC /* LaunchScreen.storyboard in Resources */,
 				4992F59A1DDBCD4D005EF1AC /* Assets.xcassets in Resources */,
 				4992F5981DDBCD4D005EF1AC /* Main.storyboard in Resources */,
@@ -433,7 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4992F5951DDBCD4D005EF1AC /* ViewController.swift in Sources */,
+				4992F5951DDBCD4D005EF1AC /* MainViewController.swift in Sources */,
 				4992F5931DDBCD4D005EF1AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +612,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2WB6695YQP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Nerd\\ Alert!",
+					"$(PROJECT_DIR)/Nerd\\ Alert!",
+					"$(PROJECT_DIR)/Nerd\\ Alert!",
+					"$(PROJECT_DIR)/Nerd\\ Alert!",
+				);
 				INFOPLIST_FILE = "Nerd Alert!/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewOlson.Nerd-Alert-";
@@ -602,6 +633,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2WB6695YQP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Nerd\\ Alert!",
+					"$(PROJECT_DIR)/Nerd\\ Alert!",
+					"$(PROJECT_DIR)/Nerd\\ Alert!",
+					"$(PROJECT_DIR)/Nerd\\ Alert!",
+				);
 				INFOPLIST_FILE = "Nerd Alert!/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewOlson.Nerd-Alert-";
