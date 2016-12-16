@@ -25,7 +25,10 @@ class MainViewController: UIViewController {
         configureAuth()
     }
     override func viewWillDisappear(_ animated: Bool) {
-        //TODO: Sign Out - Remove before publication
+    }
+    @IBAction func signOutAction(_ sender: UIBarButtonItem)
+    {
+        
         let firebaseAuth = FIRAuth.auth()
         do {
             try firebaseAuth?.signOut()
