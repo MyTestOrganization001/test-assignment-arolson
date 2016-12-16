@@ -15,17 +15,24 @@ import FirebaseFacebookAuthUI
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var messageButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var swipeButton: UIButton!
+    @IBOutlet weak var profileButton: UIButton!
+    @IBOutlet weak var settingsButton: UIButton!
     
+
     fileprivate var authHandle: FIRAuthStateDidChangeListenerHandle!
     var user: FIRUser?
     var displayName = "Unknown User"
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         configureAuth()
+        layoutButtons()
     }
-    override func viewWillDisappear(_ animated: Bool) {
-    }
+   
     @IBAction func signOutAction(_ sender: UIBarButtonItem)
     {
         
@@ -36,9 +43,57 @@ class MainViewController: UIViewController {
             print ("Error signing out: %@", signOutError)
         }
     }
-
-   func configureAuth()
-   {
+    func layoutButtons()
+    {
+        messageButton.imageView?.contentMode = .scaleAspectFit
+        searchButton.imageView?.contentMode = .scaleAspectFit
+        swipeButton.imageView?.contentMode = .scaleAspectFit
+        profileButton.imageView?.contentMode = .scaleAspectFit
+        settingsButton.imageView?.contentMode = .scaleAspectFit
+    }
+    //setup view's depending on the signed in status
+    func signed(in: Bool)
+    {
+    
+    }
+    //MARK: Deinit
+    deinit {
+        FIRAuth.auth()?.removeStateDidChangeListener(authHandle)
+        print("Deinit")
+    }
+}
+//MARK: Facebook Button Delegete
+extension MainViewController: FBSDKLoginButtonDelegate
+{
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!)
+    {
+        if error != nil
+        {
+            print("Facebook login error \(error)")
+            return
+        }
+        if result.isCancelled
+        {
+        
+            print("Facebook login canceled.")
+            return
+        }
+        
+        let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+        
+        configureAuth(credential: credential)
+    }
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!)
+    {
+        //Handle Facebook logout here
+    }
+}
+//MARK: Firebase Login - Configuration
+extension MainViewController
+{
+    //configuring Google and Email Authentication
+    func configureAuth()
+    {
         FIRAuthUI.default()?.providers = [FIRGoogleAuthUI(),FIRFacebookAuthUI()]
         authHandle = FIRAuth.auth()?.addStateDidChangeListener({ (auth, user) in
             //check if the user is active.
@@ -67,6 +122,7 @@ class MainViewController: UIViewController {
             
         })
     }
+    // Configuring Facebook Authentication with Firebase database
     func configureAuth(credential: FIRAuthCredential)
     {
         print("\nUser Credential : \(credential)\n")
@@ -95,45 +151,10 @@ class MainViewController: UIViewController {
             }
         }
     }
-
-    //setup view's depending on the signed in status
-    func signed(in: Bool)
-    {
-    
-    }
+    //Create the Authenticating View Controller
     func loginSession()
     {
         let authViewController = FIRAuthUI.default()?.authViewController()
         present(authViewController!, animated: true, completion: nil)
-    }
-    //MARK: Deinit
-    deinit {
-        FIRAuth.auth()?.removeStateDidChangeListener(authHandle)
-        print("Deinit")
-    }
-}
-extension MainViewController: FBSDKLoginButtonDelegate
-{
-    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!)
-    {
-        if error != nil
-        {
-            print("Facebook login error \(error)")
-            return
-        }
-        if result.isCancelled
-        {
-        
-            print("Facebook login canceled.")
-            return
-        }
-        
-        let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-        
-        configureAuth(credential: credential)
-    }
-    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!)
-    {
-    
     }
 }

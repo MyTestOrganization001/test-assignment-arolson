@@ -33,120 +33,91 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="P7E-A8-hDB" firstAttribute="top" secondItem="co7-d4-eQz" secondAttribute="top" constant="5" id="6sL-cd-5Qw"/>
-                                                <constraint firstItem="P7E-A8-hDB" firstAttribute="leading" secondItem="co7-d4-eQz" secondAttribute="leading" id="RGY-RO-bhO"/>
-                                                <constraint firstAttribute="bottom" secondItem="P7E-A8-hDB" secondAttribute="bottom" id="jGC-7i-JIP"/>
-                                                <constraint firstAttribute="trailing" secondItem="P7E-A8-hDB" secondAttribute="trailing" id="sfD-tZ-4wQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="P7E-A8-hDB" secondAttribute="trailing" constant="14" id="11i-UK-sXK"/>
+                                                <constraint firstAttribute="bottom" secondItem="P7E-A8-hDB" secondAttribute="bottom" id="NvI-dQ-4U2"/>
+                                                <constraint firstItem="P7E-A8-hDB" firstAttribute="leading" secondItem="co7-d4-eQz" secondAttribute="leading" id="cht-GA-fBP"/>
+                                                <constraint firstItem="P7E-A8-hDB" firstAttribute="top" secondItem="co7-d4-eQz" secondAttribute="top" constant="8" id="cvs-42-e0F"/>
                                             </constraints>
                                         </view>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dPR-qd-5SC"/>
                                     <barButtonItem title="Sign Out" id="iBR-Ao-bTp">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="signOutAction:" destination="BYZ-38-t0r" id="jbQ-Pd-sSM"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="barTintColor" red="0.0" green="0.6588235294117647" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lL0-hQ-vZq">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piN-ZJ-cJO">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-ze-J57">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8WT-oy-W5v">
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neP-nB-OKu">
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-R5-cFN">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxO-XH-UjE">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frk-7u-ig0">
                                                         <state key="normal" title="Button" image="MessageIcon"/>
                                                     </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstItem="wxO-XH-UjE" firstAttribute="leading" secondItem="neP-nB-OKu" secondAttribute="leading" constant="4" id="CxM-zI-qJ3"/>
-                                                    <constraint firstAttribute="bottom" secondItem="wxO-XH-UjE" secondAttribute="bottom" constant="21" id="bqV-AC-xAB"/>
-                                                    <constraint firstAttribute="trailing" secondItem="wxO-XH-UjE" secondAttribute="trailing" constant="4" id="hgo-YF-WhW"/>
-                                                    <constraint firstItem="wxO-XH-UjE" firstAttribute="top" secondItem="neP-nB-OKu" secondAttribute="top" constant="21" id="pie-09-S9t"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xka-mR-e6y">
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPn-KP-D7E">
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bg-2S-qAG">
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDq-7c-Bk1">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFZ-xp-j9K">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYK-of-Z10">
                                                         <state key="normal" title="Button" image="SearchIcon"/>
                                                     </button>
                                                 </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydj-tr-kYQ">
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="KDq-7c-Bk1" secondAttribute="bottom" constant="8" id="Na1-qi-Ale"/>
-                                                    <constraint firstAttribute="trailing" secondItem="KDq-7c-Bk1" secondAttribute="trailing" constant="8" id="Qdh-Ff-C5h"/>
-                                                    <constraint firstItem="KDq-7c-Bk1" firstAttribute="top" secondItem="3bg-2S-qAG" secondAttribute="top" constant="8" id="jPJ-ZN-ke9"/>
-                                                    <constraint firstItem="KDq-7c-Bk1" firstAttribute="leading" secondItem="3bg-2S-qAG" secondAttribute="leading" constant="8" id="wVf-TI-zAs"/>
-                                                </constraints>
                                             </view>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEc-tc-UUS"/>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nov-OB-joA">
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGY-A3-eU7">
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RRd-Us-esx">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8H-s1-m7e">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cn-BI-DhM">
                                                         <state key="normal" title="Button" image="FireIcon"/>
                                                     </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstItem="o8H-s1-m7e" firstAttribute="top" secondItem="QGY-A3-eU7" secondAttribute="top" id="4Xa-80-hea"/>
-                                                    <constraint firstItem="o8H-s1-m7e" firstAttribute="leading" secondItem="QGY-A3-eU7" secondAttribute="leading" id="ObI-4r-ezF"/>
-                                                    <constraint firstAttribute="trailing" secondItem="o8H-s1-m7e" secondAttribute="trailing" id="TiI-Re-S7c"/>
-                                                    <constraint firstAttribute="bottom" secondItem="o8H-s1-m7e" secondAttribute="bottom" constant="8" id="i2I-rb-n0X"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3I-GE-Pb9">
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJt-Oj-Nic">
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ez-rw-Og6">
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baZ-MR-bMG">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnO-Pd-cQc">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFa-xH-dxh">
                                                         <state key="normal" title="Button" image="ProfileIcon"/>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="baZ-MR-bMG" secondAttribute="trailing" id="847-EJ-TcJ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="baZ-MR-bMG" secondAttribute="bottom" constant="8" id="G9X-wq-gRd"/>
-                                                    <constraint firstItem="baZ-MR-bMG" firstAttribute="top" secondItem="8ez-rw-Og6" secondAttribute="top" id="Qs0-72-TzG"/>
-                                                    <constraint firstItem="baZ-MR-bMG" firstAttribute="leading" secondItem="8ez-rw-Og6" secondAttribute="leading" id="tDP-fW-82Z"/>
-                                                </constraints>
-                                            </view>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXb-oY-KxS"/>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-uo-aIP"/>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1o-RP-pqV"/>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="C5X-Jj-kWO"/>
+                                    <constraint firstAttribute="trailing" secondItem="8WT-oy-W5v" secondAttribute="trailing" id="CQ2-Zh-m89"/>
+                                    <constraint firstItem="8WT-oy-W5v" firstAttribute="leading" secondItem="piN-ZJ-cJO" secondAttribute="leading" id="aqf-AY-C28"/>
+                                    <constraint firstAttribute="bottom" secondItem="8WT-oy-W5v" secondAttribute="bottom" id="dW1-Y8-39R"/>
+                                    <constraint firstItem="8WT-oy-W5v" firstAttribute="top" secondItem="piN-ZJ-cJO" secondAttribute="top" id="gmf-h4-cdN"/>
+                                    <constraint firstAttribute="width" constant="300" id="mc4-Iw-FUB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JLh-Hi-iov" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0tf-Zq-x7w"/>
-                            <constraint firstItem="lL0-hQ-vZq" firstAttribute="top" secondItem="JLh-Hi-iov" secondAttribute="bottom" constant="50" id="4MP-VE-1X8"/>
                             <constraint firstItem="JLh-Hi-iov" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="76k-B2-A0Z"/>
                             <constraint firstAttribute="trailing" secondItem="JLh-Hi-iov" secondAttribute="trailing" id="7Fy-T7-Nli"/>
-                            <constraint firstAttribute="bottom" secondItem="lL0-hQ-vZq" secondAttribute="bottom" id="GhH-so-IeB"/>
+                            <constraint firstItem="piN-ZJ-cJO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cp2-Xh-RGh"/>
                             <constraint firstItem="JLh-Hi-iov" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="LEF-Kn-TnG"/>
-                            <constraint firstItem="lL0-hQ-vZq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="O0U-R8-2mU"/>
+                            <constraint firstItem="piN-ZJ-cJO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JLh-Hi-iov" secondAttribute="bottom" constant="50" id="N0N-hz-69X"/>
                             <constraint firstAttribute="trailing" secondItem="JLh-Hi-iov" secondAttribute="trailing" id="Rk5-3e-JtE"/>
                             <constraint firstItem="JLh-Hi-iov" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZeR-xc-DYT"/>
-                            <constraint firstAttribute="trailing" secondItem="lL0-hQ-vZq" secondAttribute="trailing" constant="40" id="mxN-AW-cx2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="piN-ZJ-cJO" secondAttribute="bottom" constant="10" id="mnP-dc-mDk"/>
+                            <constraint firstItem="piN-ZJ-cJO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vmf-Oc-hWz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageButton" destination="frk-7u-ig0" id="kXd-a6-25f"/>
+                        <outlet property="profileButton" destination="TFa-xH-dxh" id="bPO-nb-ssV"/>
+                        <outlet property="searchButton" destination="rYK-of-Z10" id="8c1-gG-u4x"/>
+                        <outlet property="settingsButton" destination="P7E-A8-hDB" id="Zrk-HJ-Xjl"/>
+                        <outlet property="swipeButton" destination="7cn-BI-DhM" id="jEb-Qm-eF6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
